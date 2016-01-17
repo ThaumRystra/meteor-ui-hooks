@@ -3,11 +3,16 @@ Meteor UI Hooks
 
 A simpler API for Blaze \_uihooks
 
+Differences from gwendall/meteor-ui-hooks
+------------
+
+Now you can use uihooks with router and multiple templates with usual API.
+
 Installation  
 ------------
 
 ``` sh
-meteor add gwendall:ui-hooks
+meteor add nikogosovd:ui-hooks
 ```
 
 Methods
