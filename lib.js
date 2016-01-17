@@ -41,14 +41,12 @@ var makeHook = function(hooks, defaultCallback) {
 };
 
 Template.prototype.uihooks = function(hooksAll) {
-  var tpl = this;
-  tpl.onRendered(function() {
-    if (!tpl.viewName) return;
+  this.onRendered(function() {
     tpl = this;
     var tplContainer = $(tpl.firstNode.parentNode);
     for (var selector in hooksAll) {
       var hooks = hooksAll[selector];
-      var declaredContainer = hooks.container && $(hooks.container);
+      var declaredContainer = hooks.container && tpl.$(hooks.container);
       var itemsContainer = tpl.$(selector).length && tpl.$(selector).first().parent();
       var container = declaredContainer || itemsContainer || tplContainer;
       $(container).each(function() {
