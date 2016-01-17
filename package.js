@@ -1,12 +1,12 @@
 Package.describe({
-  name: 'gwendall:ui-hooks',
-  summary: 'A simpler API for Blaze _uihooks',
-  git: 'https://github.com/gwendall/meteor-ui-hooks.git',
-  version: '0.1.7'
+  name: 'nikogosovd:multiple-uihooks',
+  version: '0.1.8',
+  summary: 'A simpler API for Blaze _uihooks with multiple layouts and routing support',
+  git: 'https://github.com/nikogosovd/meteor-ui-hooks',
+  documentation: 'README.md'
 });
 
-Package.onUse(function (api, where) {
-
+Package.onUse(function(api, where) {
   api.use([
     'templating@1.1.1',
     'jquery@1.11.3_2'
@@ -17,5 +17,4 @@ Package.onUse(function (api, where) {
   ], 'client');
 
   api.export('UiHooks', 'client');
-
 });
