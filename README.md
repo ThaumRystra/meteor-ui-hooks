@@ -12,7 +12,7 @@ Installation
 ------------
 
 ``` sh
-meteor add nikogosovd:ui-hooks
+meteor add nikogosovd:multiple-uihooks
 ```
 
 Methods
